@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <div>
+            <section>
+                <div>
+                    <p>CADASTRE-SE E TENHA</p>
+                    <h2>SUPER DESCONTOS</h2>
+                </div>
+
+                <div>
+                    <p>É CPF no Caixa e <strong>Superdescontos</strong> no bolso! </p>
+                </div>
+                <img src="/assets/avatar_login.png" alt="Ilustração de um homem a pontando para tela de login">
+
+                <div>
+                    <p>Olá! Entre ou Cadastre-se</p>
+                    <p><strong>CPF</strong></p>
+                    <form action="/cadastro" method="get">
+                        <label for="cpf">CPF:</label>
+                        <input type="text" id="cpf" name="cpf" placeholder="Digite seu CPF" maxlength="11" required
+                            pattern="\d{11}" title="Digite um CPF válido com 11 números">
+                        <p><strong>*</strong>Campo obrigatório</p>
+                        <label for="senha">Senha:</label>
+                        <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+                        <p><strong>*</strong>Campo obrigatório</p>
+                    </form>
+                    <a href="/recuperar-senha" style="display: block; margin-top: 5px; font-size: 14px;">Esqueceu sua
+                        senha?</a>
+                    <a href="cadastro.html"><button type="criar">CRIAR CONTA</button></a>
+                    <button type="submit">ENTRAR</button>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+
+</html>

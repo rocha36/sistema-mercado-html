@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <img src="/assets/avatar_cadastro.png" alt="Avatar de um homem apontando para tela de cadastro">
+        <section>
+            <h1>CADASTRO</h1>
+            <form action="/action_page.php">
+                <label for="nome_cadastro">Nome Completo *</label><br>
+                <input type="text" id="nome_cadastro" name="nome" placeholder="Nome completo" required><br><br>
+
+                <label for="cpf_cadastro">CPF *</label><br>
+                <input type="text" id="cpf_cadastro" name="cpf" placeholder="XXX.XXX.XXX-XX" maxlength="14" required
+                    pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" title="Digite um CPF válido (XXX.XXX.XXX-XX)"><br><br>
+
+                <label for="senha_cadastro">Senha *</label><br>
+                <input type="password" id="senha_cadastro" name="senha" placeholder="Digite sua senha" required
+                    minlength="8" maxlength="8" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@#%]).{8,}"
+                    title="A senha deve conter pelo menos uma letra minúscula, uma maiúscula, um número e um caractere especial (@, #, %)"><br>
+
+                <p>A senha deve conter letras minúsculas e maiúsculas, números e pelo menos um dos seguintes caracteres
+                    especiais: @, #, %. O comprimento máximo é de 8 caracteres.</p>
+
+                <label for="confirmarSenha_Cadastro">Confirme sua senha *</label><br>
+                <input type="password" id="confirmarSenha_Cadastro" name="confirmar_senha"
+                    placeholder="Confirme sua senha" required><br><br>
+
+                <label for="email_cadastro">Email *</label><br>
+                <input type="email" id="email_cadastro" name="email" placeholder="seuemail@gmail.com" required><br><br>
+
+                <label for="telefone_cadastro">Telefone *</label><br>
+                <input type="tel" id="telefone_cadastro" name="telefone" placeholder="(XX) XXXX-XXXX"
+                    pattern="\(\d{2}\) \d{4}-\d{4}" title="Digite um telefone válido no formato (XX) XXXX-XXXX"><br><br>
+
+                <label for="celular_Cadastro">Celular *</label><br>
+                <input type="tel" id="celular_Cadastro" name="celular" placeholder="(XX) XXXXX-XXXX"
+                    pattern="\(\d{2}\) \d{5}-\d{4}" title="Digite um celular válido no formato (XX) XXXXX-XXXX"
+                    required><br><br>
+
+                <input type="checkbox" id="confirmacao_Cadastro" name="receber_comunicacao">
+                <label for="confirmacao_Cadastro">Concorda em receber comunicação do Mercadinho Ideal</label><br><br>
+
+                <button type="button" class="Voltar_Cadastro">Voltar</button>
+                <button type="submit" class="Confirmar_cadastro">Confirmar</button>
+            </form>
+        </section>
+        <img src="/assets/avatarFinal_cadastro.png" alt="Avatar de um homem fazendo um sinal de OK">
+    </main>
+    <footer></footer>
+</body>
+
+</html>
